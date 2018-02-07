@@ -7,7 +7,9 @@
   src: url("../fonts/Nexa Bold.otf"); }
 
 * {
-  font-family: 'Nexa Light', sans-serif; }
+  font-family: 'Nexa Light', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 header #particles-js {
   position: absolute;
@@ -40,7 +42,7 @@ header .container-fluid {
     z-index: 2;
     padding: 20px;
     position: absolute;
-    right: 20px;
+    right: 40px;
     top: 0; }
     header .container-fluid .redes-main a {
       padding: 10px;
@@ -94,6 +96,49 @@ header .container-fluid {
     z-index: 3;
     font-size: 40px;
     position: absolute;
-    bottom: 0; }
+    bottom: 20px; }
     header .container-fluid .more a {
       color: #fff; }
+
+main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#111657), to(#196682));
+  background: -webkit-linear-gradient(top, #111657, #196682);
+  background: -o-linear-gradient(top, #111657, #196682);
+  background: linear-gradient(180deg, #111657, #196682); }
+  main .container-fluid {
+    padding: 0; }
+    main .container-fluid .nav-main {
+      background: rgba(48, 47, 62, 0.7); }
+      main .container-fluid .nav-main .menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+      main .container-fluid .nav-main .dev {
+        color: #17e70d;
+        text-shadow: 0 0 20px #17e70d;
+        font-size: 40px;
+        padding: 0 80px; }
+        main .container-fluid .nav-main .dev:hover {
+          text-decoration: none; }
+      main .container-fluid .nav-main a {
+        color: #fff;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s;
+        border-bottom: 1px solid transparent; }
+        main .container-fluid .nav-main a:hover {
+          text-decoration: none;
+          border-bottom: 1px solid #fff; }
+    main .container-fluid .menu-fixed {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      width: 100%;
+      -webkit-box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.2); }

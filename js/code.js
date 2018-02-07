@@ -1,3 +1,12 @@
-particlesJS.load('particles-js', 'js/particles.json', function() {
-  console.log('callback - particles.js config loaded');
+jQuery(document).ready(function($) {
+	let altura = $('.nav-main').offset().top
+
+	$(window).on('scroll', function() {
+		if($(window).scrollTop() > altura){
+			$('.nav-main').addClass('menu-fixed')
+		}
+		else {
+			$('.nav-main').removeClass('menu-fixed')
+		}
+	})
 });
