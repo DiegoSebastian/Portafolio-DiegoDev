@@ -11,6 +11,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  background: #111657; }
+
 header #particles-js {
   position: absolute;
   height: 100vh;
@@ -101,44 +104,113 @@ header .container-fluid {
       color: #fff; }
 
 main {
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(#111657), to(#196682));
   background: -webkit-linear-gradient(top, #111657, #196682);
   background: -o-linear-gradient(top, #111657, #196682);
   background: linear-gradient(180deg, #111657, #196682); }
-  main .container-fluid {
-    padding: 0; }
-    main .container-fluid .nav-main {
-      background: rgba(48, 47, 62, 0.7); }
-      main .container-fluid .nav-main .menu {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
-      main .container-fluid .nav-main .dev {
-        color: #17e70d;
-        text-shadow: 0 0 20px #17e70d;
-        font-size: 40px;
-        padding: 0 80px; }
-        main .container-fluid .nav-main .dev:hover {
-          text-decoration: none; }
-      main .container-fluid .nav-main a {
-        color: #fff;
-        -webkit-transition: .4s;
-        -o-transition: .4s;
-        transition: .4s;
-        border-bottom: 1px solid transparent; }
-        main .container-fluid .nav-main a:hover {
-          text-decoration: none;
-          border-bottom: 1px solid #fff; }
-    main .container-fluid .menu-fixed {
-      position: fixed;
-      z-index: 1000;
-      top: 0;
-      width: 100%;
-      -webkit-box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.2);
-      box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.2); }
+  main .nav-main {
+    background: rgba(48, 47, 62, 0.95); }
+    main .nav-main .menu {
+      margin: 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    main .nav-main .dev {
+      color: #17e70d;
+      text-shadow: 0 0 20px #17e70d;
+      font-size: 35px;
+      padding: 0 80px; }
+      main .nav-main .dev:hover {
+        text-decoration: none; }
+    main .nav-main a {
+      color: #fff;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      border-bottom: 1px solid transparent; }
+      main .nav-main a:hover {
+        text-decoration: none;
+        border-bottom: 1px solid #fff; }
+  main .menu-fixed {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.2); }
+  main .container-fluid .about {
+    color: #fff;
+    margin: 50px auto;
+    max-width: 1200px; }
+    main .container-fluid .about .row {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    main .container-fluid .about .title {
+      font-family: 'Nexa Bold';
+      text-align: center;
+      font-size: 50px;
+      border-bottom: 1px solid #5fdecb;
+      margin-bottom: 50px; }
+    main .container-fluid .about .text-about {
+      font-size: 23px; }
+  main .container-fluid .skills {
+    color: #fff;
+    margin: 50px auto;
+    max-width: 1100px; }
+    main .container-fluid .skills .row {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    main .container-fluid .skills .title {
+      font-family: 'Nexa Bold';
+      text-align: center;
+      font-size: 50px;
+      border-bottom: 1px solid #5fdecb;
+      margin-bottom: 50px; }
+    main .container-fluid .skills .web-dev {
+      text-align: center; }
+      main .container-fluid .skills .web-dev .subtitle {
+        text-align: center;
+        padding: 20px 10px; }
+        main .container-fluid .skills .web-dev .subtitle i {
+          padding: 20px; }
+      main .container-fluid .skills .web-dev .skills-section {
+        margin: 50px auto; }
+        main .container-fluid .skills .web-dev .skills-section ul {
+          list-style: none; }
+          main .container-fluid .skills .web-dev .skills-section ul li {
+            font-size: 18px; }
+    main .container-fluid .skills .IA .subtitle {
+      text-align: center; }
+      main .container-fluid .skills .IA .subtitle i {
+        padding: 20px; }
+    main .container-fluid .skills .IA ul {
+      list-style: none;
+      text-align: center; }
+      main .container-fluid .skills .IA ul li {
+        font-size: 18px; }
+    main .container-fluid .skills .idioma .subtitle {
+      text-align: center; }
+      main .container-fluid .skills .idioma .subtitle i {
+        padding: 20px; }
+    main .container-fluid .skills .idioma ul {
+      list-style: none;
+      text-align: center; }
+      main .container-fluid .skills .idioma ul li {
+        font-size: 18px; }
+    main .container-fluid .skills .SW .subtitle {
+      text-align: center; }
+      main .container-fluid .skills .SW .subtitle i {
+        padding: 20px; }
+    main .container-fluid .skills .SW ul {
+      list-style: none;
+      text-align: center; }
+      main .container-fluid .skills .SW ul li {
+        font-size: 18px; }
