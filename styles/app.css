@@ -8,3 +8,92 @@
 
 * {
   font-family: 'Nexa Light', sans-serif; }
+
+header #particles-js {
+  position: absolute;
+  height: 100vh;
+  background: url("../images/Background.jpg");
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1; }
+
+header .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  position: relative; }
+  header .container-fluid .redes-main {
+    z-index: 2;
+    padding: 20px;
+    position: absolute;
+    right: 20px;
+    top: 0; }
+    header .container-fluid .redes-main a {
+      padding: 10px;
+      color: #fff;
+      font-size: 25px; }
+      header .container-fluid .redes-main a:hover i {
+        -webkit-transform: scale(1.12);
+        -ms-transform: scale(1.12);
+        transform: scale(1.12); }
+      header .container-fluid .redes-main a i {
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+  header .container-fluid .textos {
+    color: #fff;
+    z-index: 3;
+    text-align: center;
+    vertical-align: center;
+    display: inline;
+    text-shadow: 0 0 80px #fff; }
+    header .container-fluid .textos .title {
+      font-family: 'Nexa Bold';
+      font-size: 55px;
+      width: auto;
+      margin: 0;
+      border-bottom: 1px solid #fff; }
+      header .container-fluid .textos .title .dev {
+        color: #17e70d;
+        text-shadow: 0 0 20px #17e70d; }
+    header .container-fluid .textos .subtitle {
+      font-size: 25px;
+      padding: 10px; }
+  header .container-fluid .menu-nav {
+    z-index: 3;
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+    width: 70%;
+    text-shadow: 0 0 60px #fff; }
+    header .container-fluid .menu-nav a {
+      color: #fff;
+      font-size: 22px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      border-bottom: 1px solid transparent; }
+      header .container-fluid .menu-nav a:hover {
+        text-decoration: none;
+        border-bottom: 1px solid #fff; }
+  header .container-fluid .more {
+    z-index: 3;
+    font-size: 40px;
+    position: absolute;
+    bottom: 0; }
+    header .container-fluid .more a {
+      color: #fff; }

@@ -1,0 +1,77 @@
+header
+	
+	#particles-js
+		position: absolute
+		height: 100vh
+		background: url('../images/Background.jpg')
+		background-size: cover
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		z-index: 1
+	.container-fluid
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center	
+		height: 100vh
+		position: relative
+		.redes-main
+			z-index: 2
+			padding: 20px
+			position: absolute
+			right: 20px
+			top: 0
+			a
+				padding: 10px
+				color: #fff
+				font-size: 25px
+				&:hover i
+					transform: scale(1.12)
+				i
+					transition: .2s
+		.textos
+			color: #fff
+			z-index: 3
+			text-align: center
+			vertical-align: center
+			display: inline	
+			text-shadow: 0 0 80px #fff
+			.title
+				font-family: 'Nexa Bold'
+				font-size: 55px
+				width: auto
+				margin: 0
+				border-bottom: 	1px solid #fff
+				.dev
+					color: #17e70d
+					text-shadow: 0 0 20px #17e70d
+			.subtitle
+				font-size: 25px
+				padding: 10px
+		.menu-nav
+			z-index: 3
+			position: relative
+			text-align: center
+			margin-top: 80px
+			width: 70%
+			text-shadow: 0 0 60px #fff
+			a
+				color: #fff
+				font-size: 22px
+				transition: .3s
+				border-bottom: 1px solid transparent
+				&:hover
+					text-decoration: none
+					border-bottom: 	1px solid #fff
+		.more
+			z-index: 3
+			font-size: 40px
+			position: absolute
+			bottom: 0
+			a
+				color: #fff
+
+
+
