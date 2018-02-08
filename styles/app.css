@@ -91,10 +91,26 @@ header .container-fluid {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s;
-      border-bottom: 1px solid transparent; }
+      border-bottom: 1px solid transparent;
+      position: relative;
+      padding: 5px; }
       header .container-fluid .menu-nav a:hover {
-        text-decoration: none;
-        border-bottom: 1px solid #fff; }
+        text-decoration: none; }
+      header .container-fluid .menu-nav a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background: #fff;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s; }
+      header .container-fluid .menu-nav a:hover:before {
+        width: 100%;
+        left: 0; }
   header .container-fluid .more {
     z-index: 3;
     font-size: 40px;
@@ -130,13 +146,29 @@ main {
         text-decoration: none; }
     main .nav-main a {
       color: #fff;
-      -webkit-transition: .4s;
-      -o-transition: .4s;
-      transition: .4s;
-      border-bottom: 1px solid transparent; }
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s;
+      border-bottom: 1px solid transparent;
+      position: relative;
+      padding: 5px; }
       main .nav-main a:hover {
-        text-decoration: none;
-        border-bottom: 1px solid #fff; }
+        text-decoration: none; }
+      main .nav-main a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background: #fff;
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s; }
+      main .nav-main a:hover:before {
+        width: 100%;
+        left: 0; }
   main .menu-fixed {
     position: fixed;
     z-index: 1000;
@@ -144,41 +176,36 @@ main {
     width: 100%;
     -webkit-box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.2);
     box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.2); }
+  main .container-fluid .title {
+    font-family: 'Nexa Bold';
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 1px solid #5fdecb;
+    margin-bottom: 50px; }
   main .container-fluid .about {
     color: #fff;
-    margin: 50px auto;
-    max-width: 1200px; }
+    margin: 100px auto;
+    max-width: 80%; }
     main .container-fluid .about .row {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
-    main .container-fluid .about .title {
-      font-family: 'Nexa Bold';
-      text-align: center;
-      font-size: 50px;
-      border-bottom: 1px solid #5fdecb;
-      margin-bottom: 50px; }
     main .container-fluid .about .text-about {
       font-size: 23px; }
   main .container-fluid .skills {
     color: #fff;
-    margin: 50px auto;
-    max-width: 1100px; }
+    margin: 100px auto;
+    max-width: 85%; }
     main .container-fluid .skills .row {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
-    main .container-fluid .skills .title {
-      font-family: 'Nexa Bold';
-      text-align: center;
-      font-size: 50px;
-      border-bottom: 1px solid #5fdecb;
-      margin-bottom: 50px; }
     main .container-fluid .skills .web-dev {
       text-align: center; }
       main .container-fluid .skills .web-dev .subtitle {
         text-align: center;
-        padding: 20px 10px; }
+        padding: 20px 10px;
+        font-size: 30px; }
         main .container-fluid .skills .web-dev .subtitle i {
           padding: 20px; }
       main .container-fluid .skills .web-dev .skills-section {
@@ -188,7 +215,8 @@ main {
           main .container-fluid .skills .web-dev .skills-section ul li {
             font-size: 18px; }
     main .container-fluid .skills .IA .subtitle {
-      text-align: center; }
+      text-align: center;
+      font-size: 30px; }
       main .container-fluid .skills .IA .subtitle i {
         padding: 20px; }
     main .container-fluid .skills .IA ul {
@@ -197,7 +225,8 @@ main {
       main .container-fluid .skills .IA ul li {
         font-size: 18px; }
     main .container-fluid .skills .idioma .subtitle {
-      text-align: center; }
+      text-align: center;
+      font-size: 30px; }
       main .container-fluid .skills .idioma .subtitle i {
         padding: 20px; }
     main .container-fluid .skills .idioma ul {
@@ -206,7 +235,8 @@ main {
       main .container-fluid .skills .idioma ul li {
         font-size: 18px; }
     main .container-fluid .skills .SW .subtitle {
-      text-align: center; }
+      text-align: center;
+      font-size: 30px; }
       main .container-fluid .skills .SW .subtitle i {
         padding: 20px; }
     main .container-fluid .skills .SW ul {
@@ -214,3 +244,162 @@ main {
       text-align: center; }
       main .container-fluid .skills .SW ul li {
         font-size: 18px; }
+  main .container-fluid .works {
+    color: #fff;
+    margin: 100px auto;
+    max-width: 80%; }
+    main .container-fluid .works .row {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    main .container-fluid .works .work {
+      padding: 100px 0;
+      border-bottom: 1px solid #fff; }
+      main .container-fluid .works .work img {
+        -webkit-box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.3); }
+      main .container-fluid .works .work .work-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        main .container-fluid .works .work .work-text .subtitle {
+          font-size: 40px;
+          text-align: center; }
+      main .container-fluid .works .work .buttons-work {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        main .container-fluid .works .work .buttons-work .btn-view-site {
+          background: transparent;
+          color: #fff;
+          border: 1px solid #fff;
+          padding: 10px;
+          cursor: pointer;
+          -webkit-transition: .6s;
+          -o-transition: .6s;
+          transition: .6s;
+          -webkit-box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2); }
+          main .container-fluid .works .work .buttons-work .btn-view-site:hover {
+            background: #fff;
+            color: #111657; }
+        main .container-fluid .works .work .buttons-work .btn-more-work {
+          color: #fff;
+          margin: 30px;
+          -ms-flex-item-align: bottom;
+          align-self: bottom;
+          -webkit-transition: .4s;
+          -o-transition: .4s;
+          transition: .4s;
+          border-bottom: 1px solid transparent; }
+          main .container-fluid .works .work .buttons-work .btn-more-work:hover {
+            text-decoration: none; }
+          main .container-fluid .works .work .buttons-work .btn-more-work:before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background: #fff;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s; }
+          main .container-fluid .works .work .buttons-work .btn-more-work:hover:before {
+            width: 100%;
+            left: 0; }
+  main .container-fluid .contact {
+    color: #fff;
+    margin: 100px auto;
+    max-width: 80%; }
+    main .container-fluid .contact .row {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    main .container-fluid .contact .form input, main .container-fluid .contact .form textarea {
+      background: transparent;
+      color: #fff;
+      width: 100%;
+      padding: 20px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      font-size: 23px; }
+      main .container-fluid .contact .form input::-webkit-input-placeholder, main .container-fluid .contact .form textarea::-webkit-input-placeholder {
+        color: #fff;
+        font-size: 23px;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s; }
+      main .container-fluid .contact .form input:-ms-input-placeholder, main .container-fluid .contact .form textarea:-ms-input-placeholder {
+        color: #fff;
+        font-size: 23px;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s; }
+      main .container-fluid .contact .form input::-ms-input-placeholder, main .container-fluid .contact .form textarea::-ms-input-placeholder {
+        color: #fff;
+        font-size: 23px;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s; }
+      main .container-fluid .contact .form input::placeholder, main .container-fluid .contact .form textarea::placeholder {
+        color: #fff;
+        font-size: 23px;
+        -webkit-transition: .4s;
+        -o-transition: .4s;
+        transition: .4s; }
+      main .container-fluid .contact .form input:focus, main .container-fluid .contact .form textarea:focus {
+        outline: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+      main .container-fluid .contact .form input:focus::-webkit-input-placeholder, main .container-fluid .contact .form textarea:focus::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      main .container-fluid .contact .form input:focus:-ms-input-placeholder, main .container-fluid .contact .form textarea:focus:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      main .container-fluid .contact .form input:focus::-ms-input-placeholder, main .container-fluid .contact .form textarea:focus::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      main .container-fluid .contact .form input:focus::placeholder, main .container-fluid .contact .form textarea:focus::placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+    main .container-fluid .contact .form textarea {
+      min-height: 300px;
+      max-height: 500px; }
+    main .container-fluid .contact .form .submit-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center; }
+      main .container-fluid .contact .form .submit-container input[type="submit"] {
+        padding: 0;
+        border: none;
+        margin: 50px auto;
+        width: auto;
+        background: #045EBF;
+        cursor: pointer;
+        padding: 10px 30px; }
+        main .container-fluid .contact .form .submit-container input[type="submit"]:hover {
+          -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); }
+    main .container-fluid .contact .form .email-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      main .container-fluid .contact .form .email-container .my-email {
+        font-size: 25px; }

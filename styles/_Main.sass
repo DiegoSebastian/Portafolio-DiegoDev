@@ -17,11 +17,25 @@ main
 					text-decoration: none
 			a
 				color: #fff
-				transition: .4s
+				transition: .3s
 				border-bottom: 1px solid transparent
+				position: relative
+				padding: 5px
 				&:hover
 					text-decoration: none
-					border-bottom: 1px solid #fff
+				&:before
+					content: ""
+					display: block
+					position: absolute
+					left: 50%
+					bottom: 0
+					width: 0
+					height: 1px
+					background: #fff
+					transition: .5s
+				&:hover:before
+					width: 100%
+					left: 0
 	.menu-fixed
 			position: fixed
 			z-index: 1000
@@ -29,37 +43,32 @@ main
 			width: 100%
 			box-shadow: 0px 0px 100px rgba(#fff, .2)
 	.container-fluid
+		.title
+			font-family: 'Nexa Bold'
+			text-align: center
+			font-size: 50px
+			border-bottom: 1px solid #5fdecb
+			margin-bottom: 50px
 		.about
 			color: #fff
-			margin: 50px auto
-			max-width: 1200px
+			margin: 100px auto
+			max-width: 80%
 			.row
 				justify-content: center
-			.title
-				font-family: 'Nexa Bold'
-				text-align: center
-				font-size: 50px
-				border-bottom: 1px solid #5fdecb
-				margin-bottom: 50px
 			.text-about
 				font-size: 23px
 		.skills
 			color: #fff
-			margin: 50px auto
-			max-width: 1100px
+			margin: 100px auto
+			max-width: 85%
 			.row
 				justify-content: center
-			.title
-				font-family: 'Nexa Bold'
-				text-align: center
-				font-size: 50px
-				border-bottom: 1px solid #5fdecb
-				margin-bottom: 50px
 			.web-dev
 				text-align: center
 				.subtitle
 					text-align: center
 					padding: 20px 10px
+					font-size: 30px
 					i
 						padding: 20px
 				.skills-section
@@ -71,6 +80,7 @@ main
 			.IA
 				.subtitle
 					text-align: center
+					font-size: 30px
 					i
 						padding: 20px
 				ul
@@ -81,6 +91,7 @@ main
 			.idioma
 				.subtitle
 					text-align: center
+					font-size: 30px
 					i
 						padding: 20px
 				ul
@@ -91,6 +102,7 @@ main
 			.SW
 				.subtitle
 					text-align: center
+					font-size: 30px
 					i
 						padding: 20px
 				ul
@@ -98,8 +110,106 @@ main
 					text-align: center
 					li
 						font-size: 18px
-
-
+		.works
+			color: #fff
+			margin: 100px auto
+			max-width: 80%
+			.row
+				justify-content: center
+			.work
+				padding: 100px 0
+				border-bottom: 1px solid #fff
+				img
+					box-shadow: 0px 0px 60px rgba(#fff, .3)
+				.work-text
+					display: flex
+					flex-direction: column	
+					justify-content: space-around
+					.subtitle
+						font-size: 40px
+						text-align: center
+				.buttons-work
+					display: flex
+					justify-content: space-around
+					.btn-view-site
+						background: transparent
+						color: #fff
+						border: 1px solid #fff
+						padding: 10px
+						cursor: pointer
+						transition: .6s
+						box-shadow: 0px 0px 30px rgba(#fff, .2)
+						&:hover
+							background: #fff
+							color: #111657
+					.btn-more-work
+						color: #fff
+						margin: 30px
+						align-self: bottom
+						transition: .4s
+						border-bottom: 1px solid transparent
+						&:hover
+							text-decoration: none
+						&:before
+							content: ""
+							display: block
+							position: absolute
+							left: 50%
+							bottom: 0
+							width: 0
+							height: 1px
+							background: #fff
+							transition: .5s
+						&:hover:before
+							width: 100%
+							left: 0
+		.contact
+			color: #fff
+			margin: 100px auto
+			max-width: 80%
+			.row
+				justify-content: center
+			.form
+				input, textarea
+					background: transparent
+					color: #fff
+					width: 100%
+					padding: 20px
+					border: none
+					border-bottom: 1px solid #fff
+					transition: .4s
+					font-size: 23px
+					&::placeholder
+						color: #fff
+						font-size: 23px
+						transition: .4s
+					&:focus
+						outline: 0
+						border-bottom: 1px solid rgba(#fff, .5)
+					&:focus::placeholder
+						color: rgba(#fff, .5)
+				textarea
+					min-height: 300px
+					max-height: 500px
+				.submit-container
+					display: flex
+					align-content: center
+					input[type="submit"]
+						padding: 0
+						border: none
+						margin: 50px auto
+						width: auto
+						background: #045EBF
+						cursor: pointer
+						padding: 10px 30px
+						&:hover
+							box-shadow: 0 0 30px rgba(#000, .3)
+				.email-container
+					display: flex
+					align-items: center
+					justify-content: center
+					.my-email
+						font-size: 25px
 
 
 
