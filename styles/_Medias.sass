@@ -127,10 +127,9 @@
 			z-index: 1000
 			width: 100vw
 			height: 100vh
-			.active
-				display: inline-block
-			.hidden
-				display: none
+			transition: .5s
+			&.active
+				left: 0
 			.row
 				flex-direction: column
 				justify-content: space-between
@@ -152,6 +151,8 @@
 				a
 					color: #fff
 					font-size: 30px
+					&:hover
+						color: #fff
 				.fa-bars
 					position: fixed
 					left: 20

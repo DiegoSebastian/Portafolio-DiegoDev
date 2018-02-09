@@ -102,5 +102,21 @@ jQuery(document).ready(function($) {
 		}, 700)
 	})
 
+	// Hammer JS
 
+	let menu = $('#nav-mobile')
+	let body = document.body;
+	let hammer = new Hammer(body)
+
+	hammer.on('swiperight', function(ev) {
+		menu.addClass('active')
+	});
+
+	hammer.on('swipeleft', function(ev) {
+		menu.removeClass('active')
+	});
+
+	$('#nav-mobile a').on('click', function(){
+		menu.removeClass('active')
+	})
 });

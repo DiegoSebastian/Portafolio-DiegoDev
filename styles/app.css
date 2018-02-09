@@ -17,6 +17,15 @@ body {
 .row {
   margin: 0; }
 
+.hidden {
+  left: -100%; }
+
+.active {
+  left: 0; }
+
+.opened {
+  overflow: hidden; }
+
 header #particles-js {
   position: absolute;
   height: 100vh;
@@ -542,11 +551,12 @@ footer .container-fluid {
     left: -100%;
     z-index: 1000;
     width: 100vw;
-    height: 100vh; }
-    main .nav-mobile .active {
-      display: inline-block; }
-    main .nav-mobile .hidden {
-      display: none; }
+    height: 100vh;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    main .nav-mobile.active {
+      left: 0; }
     main .nav-mobile .row {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -581,6 +591,8 @@ footer .container-fluid {
       main .nav-mobile .row a {
         color: #fff;
         font-size: 30px; }
+        main .nav-mobile .row a:hover {
+          color: #fff; }
       main .nav-mobile .row .fa-bars {
         position: fixed;
         left: 20; }
