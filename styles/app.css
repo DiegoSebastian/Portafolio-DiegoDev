@@ -403,3 +403,31 @@ main {
       justify-content: center; }
       main .container-fluid .contact .form .email-container .my-email {
         font-size: 25px; }
+
+footer .container-fluid {
+  max-width: 60%; }
+  footer .container-fluid .redes-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; }
+    footer .container-fluid .redes-footer a {
+      padding: 10px;
+      color: #fff;
+      font-size: 60px; }
+      footer .container-fluid .redes-footer a:hover i {
+        -webkit-transform: scale(1.12);
+        -ms-transform: scale(1.12);
+        transform: scale(1.12); }
+      footer .container-fluid .redes-footer a i {
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+    footer .container-fluid .redes-footer .credits {
+      color: #fff;
+      margin: 30px 0; }
