@@ -1,5 +1,4 @@
 header
-	
 	#particles-js
 		position: absolute
 		height: 100vh
@@ -10,6 +9,7 @@ header
 		right: 0
 		left: 0
 		z-index: 1
+		background-attachment: fixed
 	.container-fluid
 		display: flex
 		flex-direction: column
@@ -66,8 +66,10 @@ header
 				border-bottom: 1px solid transparent
 				position: relative
 				padding: 5px
+				cursor: pointer
 				&:hover
 					text-decoration: none
+					color: #fff
 				&:before
 					content: ""
 					display: block
@@ -81,14 +83,22 @@ header
 				&:hover:before
 					width: 100%
 					left: 0
-
 		.more
 			z-index: 3
 			font-size: 40px
 			position: absolute
 			bottom: 20px
-			a
-				color: #fff
+			color: #fff
+			cursor: pointer
+			transition: .4s
+			animation: btn-more 1.3s infinite
 
+@keyframes btn-more
+	10%
+		transform: scale(1)
+	20%
+		transform: scale(1.2)
+	100%
+		transform: scale(1)
 
 

@@ -3,6 +3,7 @@ main
 	background: linear-gradient(180deg, #111657, #196682)
 	.nav-main
 			background: rgba(#302f3e, .95)
+			color: #fff
 			.menu
 				margin: 0px
 				display: flex
@@ -15,12 +16,14 @@ main
 				padding: 0 80px
 				&:hover
 					text-decoration: none
+					color: #17e70d
 			a
 				color: #fff
 				transition: .3s
 				border-bottom: 1px solid transparent
 				position: relative
 				padding: 5px
+				cursor: pointer
 				&:hover
 					text-decoration: none
 				&:before
@@ -169,47 +172,68 @@ main
 			max-width: 80%
 			.row
 				justify-content: center
-			.form
-				input, textarea
-					background: transparent
+			// input, textarea
+			// 		background: transparent
+			// 		color: #fff
+			// 		width: 100%
+			// 		padding: 20px
+			// 		border: none
+			// 		border-bottom: 1px solid #fff
+			// 		transition: .4s
+			// 		font-size: 23px
+			// 		&::placeholder
+			// 			color: #fff
+			// 			font-size: 23px
+			// 			transition: .4s
+			// 		&:focus
+			// 			outline: 0
+			// 			border-bottom: 1px solid rgba(#fff, .5)
+			// 		&:focus::placeholder
+			// 			color: rgba(#fff, .5)
+			// textarea
+			// 		min-height: 300px
+			// 		max-height: 500px
+			// .submit-container
+			// 		display: flex
+			// 		align-content: center
+			// 		input[type="submit"]
+			// 			padding: 0
+			// 			border: none
+			// 			margin: 50px auto
+			// 			width: auto
+			// 			background: #045EBF
+			// 			cursor: pointer
+			// 			padding: 10px 30px
+			// 			&:hover
+			// 				box-shadow: 0 0 30px rgba(#000, .3)
+			.contact-container
+				display: flex
+				align-items: center
+				justify-content: center
+				a
 					color: #fff
-					width: 100%
+					transition: .3s
+					border-bottom: 1px solid transparent
+					position: relative
 					padding: 20px
-					border: none
-					border-bottom: 1px solid #fff
-					transition: .4s
-					font-size: 23px
-					&::placeholder
-						color: #fff
-						font-size: 23px
-						transition: .4s
-					&:focus
-						outline: 0
-						border-bottom: 1px solid rgba(#fff, .5)
-					&:focus::placeholder
-						color: rgba(#fff, .5)
-				textarea
-					min-height: 300px
-					max-height: 500px
-				.submit-container
-					display: flex
-					align-content: center
-					input[type="submit"]
-						padding: 0
-						border: none
-						margin: 50px auto
-						width: auto
-						background: #045EBF
-						cursor: pointer
-						padding: 10px 30px
-						&:hover
-							box-shadow: 0 0 30px rgba(#000, .3)
-				.email-container
-					display: flex
-					align-items: center
-					justify-content: center
-					.my-email
-						font-size: 25px
+					margin: 30px
+					cursor: pointer
+					font-size: 30px
+					&:hover
+						text-decoration: none
+					&:before
+						content: ""
+						display: block
+						position: absolute
+						left: 50%
+						bottom: 0
+						width: 0
+						height: 1px
+						background: #fff
+						transition: .5s
+					&:hover:before
+						width: 100%
+						left: 0
 
 
 

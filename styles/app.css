@@ -23,7 +23,8 @@ header #particles-js {
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  background-attachment: fixed; }
 
 header .container-fluid {
   display: -webkit-box;
@@ -93,9 +94,11 @@ header .container-fluid {
       transition: .3s;
       border-bottom: 1px solid transparent;
       position: relative;
-      padding: 5px; }
+      padding: 5px;
+      cursor: pointer; }
       header .container-fluid .menu-nav a:hover {
-        text-decoration: none; }
+        text-decoration: none;
+        color: #fff; }
       header .container-fluid .menu-nav a:before {
         content: "";
         display: block;
@@ -115,9 +118,36 @@ header .container-fluid {
     z-index: 3;
     font-size: 40px;
     position: absolute;
-    bottom: 20px; }
-    header .container-fluid .more a {
-      color: #fff; }
+    bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+    -webkit-animation: btn-more 1.3s infinite;
+    animation: btn-more 1.3s infinite; }
+
+@-webkit-keyframes btn-more {
+  10% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  20% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes btn-more {
+  10% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  20% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
 main {
   position: relative;
@@ -126,7 +156,8 @@ main {
   background: -o-linear-gradient(top, #111657, #196682);
   background: linear-gradient(180deg, #111657, #196682); }
   main .nav-main {
-    background: rgba(48, 47, 62, 0.95); }
+    background: rgba(48, 47, 62, 0.95);
+    color: #fff; }
     main .nav-main .menu {
       margin: 0px;
       display: -webkit-box;
@@ -143,7 +174,8 @@ main {
       font-size: 35px;
       padding: 0 80px; }
       main .nav-main .dev:hover {
-        text-decoration: none; }
+        text-decoration: none;
+        color: #17e70d; }
     main .nav-main a {
       color: #fff;
       -webkit-transition: .3s;
@@ -151,7 +183,8 @@ main {
       transition: .3s;
       border-bottom: 1px solid transparent;
       position: relative;
-      padding: 5px; }
+      padding: 5px;
+      cursor: pointer; }
       main .nav-main a:hover {
         text-decoration: none; }
       main .nav-main a:before {
@@ -325,73 +358,7 @@ main {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
-    main .container-fluid .contact .form input, main .container-fluid .contact .form textarea {
-      background: transparent;
-      color: #fff;
-      width: 100%;
-      padding: 20px;
-      border: none;
-      border-bottom: 1px solid #fff;
-      -webkit-transition: .4s;
-      -o-transition: .4s;
-      transition: .4s;
-      font-size: 23px; }
-      main .container-fluid .contact .form input::-webkit-input-placeholder, main .container-fluid .contact .form textarea::-webkit-input-placeholder {
-        color: #fff;
-        font-size: 23px;
-        -webkit-transition: .4s;
-        -o-transition: .4s;
-        transition: .4s; }
-      main .container-fluid .contact .form input:-ms-input-placeholder, main .container-fluid .contact .form textarea:-ms-input-placeholder {
-        color: #fff;
-        font-size: 23px;
-        -webkit-transition: .4s;
-        -o-transition: .4s;
-        transition: .4s; }
-      main .container-fluid .contact .form input::-ms-input-placeholder, main .container-fluid .contact .form textarea::-ms-input-placeholder {
-        color: #fff;
-        font-size: 23px;
-        -webkit-transition: .4s;
-        -o-transition: .4s;
-        transition: .4s; }
-      main .container-fluid .contact .form input::placeholder, main .container-fluid .contact .form textarea::placeholder {
-        color: #fff;
-        font-size: 23px;
-        -webkit-transition: .4s;
-        -o-transition: .4s;
-        transition: .4s; }
-      main .container-fluid .contact .form input:focus, main .container-fluid .contact .form textarea:focus {
-        outline: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
-      main .container-fluid .contact .form input:focus::-webkit-input-placeholder, main .container-fluid .contact .form textarea:focus::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, 0.5); }
-      main .container-fluid .contact .form input:focus:-ms-input-placeholder, main .container-fluid .contact .form textarea:focus:-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.5); }
-      main .container-fluid .contact .form input:focus::-ms-input-placeholder, main .container-fluid .contact .form textarea:focus::-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.5); }
-      main .container-fluid .contact .form input:focus::placeholder, main .container-fluid .contact .form textarea:focus::placeholder {
-        color: rgba(255, 255, 255, 0.5); }
-    main .container-fluid .contact .form textarea {
-      min-height: 300px;
-      max-height: 500px; }
-    main .container-fluid .contact .form .submit-container {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-line-pack: center;
-      align-content: center; }
-      main .container-fluid .contact .form .submit-container input[type="submit"] {
-        padding: 0;
-        border: none;
-        margin: 50px auto;
-        width: auto;
-        background: #045EBF;
-        cursor: pointer;
-        padding: 10px 30px; }
-        main .container-fluid .contact .form .submit-container input[type="submit"]:hover {
-          -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); }
-    main .container-fluid .contact .form .email-container {
+    main .container-fluid .contact .contact-container {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -401,8 +368,34 @@ main {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
-      main .container-fluid .contact .form .email-container .my-email {
-        font-size: 25px; }
+      main .container-fluid .contact .contact-container a {
+        color: #fff;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        border-bottom: 1px solid transparent;
+        position: relative;
+        padding: 20px;
+        margin: 30px;
+        cursor: pointer;
+        font-size: 30px; }
+        main .container-fluid .contact .contact-container a:hover {
+          text-decoration: none; }
+        main .container-fluid .contact .contact-container a:before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          width: 0;
+          height: 1px;
+          background: #fff;
+          -webkit-transition: .5s;
+          -o-transition: .5s;
+          transition: .5s; }
+        main .container-fluid .contact .contact-container a:hover:before {
+          width: 100%;
+          left: 0; }
 
 footer .container-fluid {
   max-width: 60%; }

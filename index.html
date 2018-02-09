@@ -5,6 +5,7 @@
 	<title>DiegoDev | Inicio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/pace-theme-flash.css">
 	<link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
@@ -28,22 +29,22 @@
 			
 			<div class="row menu-nav">
 					<div class="col-md">
-						<a href="#" class="btn-about" id="btn-about">Acerca de mi</a>
+						<a class="btn-about" id="btn-about">Acerca de mi</a>
 					</div>
 					<div class="col-md">
-						<a href="#" class="btn-skills" id="btn-skills">Habilidades</a>
+						<a class="btn-skills" id="btn-skills">Habilidades</a>
 					</div>
 					<div class="col-md">
-						<a href="#" class="btn-work" id="btn-work">Trabajos</a>
+						<a class="btn-work" id="btn-work">Trabajos</a>
 					</div>
 					<div class="col-md">
-						<a href="#" class="btn-contact" id="btn-contact">Contacto</a>
+						<a class="btn-contact" id="btn-contact">Contacto</a>
 					</div>
 			</div>
 
 			<div class="row more">
 				<div class="col">
-					<a href="#"><i class="fa fa-angle-down"></i></a>
+					<a id="btn-more"><i class="fa fa-angle-down"></i></a>
 				</div>
 			</div>
 		</div>
@@ -56,19 +57,19 @@
 			<!-- NAV -->
 			<section class="nav-main">
 				<div class="row menu">
-					<a href="#" class="col-auto dev">.DEV</a>
+					<a class="col-auto dev" id="btn-dev">.DEV</a>
 					<div class="col-8 row">
 						<div class="col-3">
-							<a href="#" class="btn-about-menu" id="btn-about-menu">Acerca de mi</a>
+							<a class="btn-about-menu" id="btn-about-menu">Acerca de mi</a>
 						</div>
 						<div class="col-3">
-							<a href="#" class="btn-skills-menu" id="btn-skills-menu">Habilidades</a>
+							<a class="btn-skills-menu" id="btn-skills-menu">Habilidades</a>
 						</div>
 						<div class="col-3">
-							<a href="#" class="btn-work-menu" id="btn-work-menu">Trabajos</a>
+							<a class="btn-work-menu" id="btn-work-menu">Trabajos</a>
 						</div>
 						<div class="col-3">
-							<a href="#" class="btn-contact-menu" id="btn-contact-menu">Contacto</a>
+							<a class="btn-contact-menu" id="btn-contact-menu">Contacto</a>
 						</div>
 					</div>
 				</div>
@@ -223,7 +224,7 @@
 				<div class="row">
 					<h2 class="title">CONTACTO</h2>
 				</div>
-				<form action="" class="form">
+				<!-- <form action="" class="form">
 					<div class="row">
 						<div class="col-md">
 							<input type="text" class="input-text" placeholder="Nombre...">
@@ -237,11 +238,20 @@
 						<div class="col-md order-md-5 submit-container">
 							<input type="submit" value="Enviar">
 						</div>
-						<div class="col-md email-container">
-							<h3 class="my-email">Email: diegosebastian.dev@gmail.com</h3>
-						</div>
 					</div>
-				</form>
+				</form> -->
+				<div class="col-md contact-container">
+					<a href="mailto:diegosebastian.dev@gmail.com" class="my-email">Email: diegosebastian.dev@gmail.com</a>
+				</div>
+				<div class="col-md contact-container">
+					<a href="#" class="my-face">Facebook: Diego Sebastián</a>
+				</div>
+				<div class="col-md contact-container">
+					<a href="#" class="my-insta">Instagram: @dgsebs</a>
+				</div>
+				<div class="col-md contact-container">
+					<a href="#" class="my-yt">Canal de youtube: Diego Sebastian</a>
+				</div>
 			</section>
 			<!-- /CONTACTO -->
 			</div>
@@ -265,6 +275,7 @@
 	<!-- /FOOTER -->
 	
 	<script src="js/particles.js"></script>
+	<script src="js/pace.min.js"></script>
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
