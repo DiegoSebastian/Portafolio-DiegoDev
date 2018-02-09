@@ -18,7 +18,7 @@ body {
   margin: 0; }
 
 .hidden {
-  left: -100%; }
+  left: -120%; }
 
 .active {
   left: 0; }
@@ -548,7 +548,7 @@ footer .container-fluid {
     background: linear-gradient(180deg, #56237F, rgba(17, 22, 87, 0.95));
     position: fixed;
     top: 0;
-    left: -100%;
+    left: -150%;
     z-index: 1000;
     width: 100vw;
     height: 100vh;
@@ -577,6 +577,8 @@ footer .container-fluid {
         text-shadow: 0 0 20px #17e70d;
         font-size: 50px;
         padding: 0 80px; }
+        main .nav-mobile .row .dev:hover {
+          color: #17e70d; }
       main .nav-mobile .row .col {
         border-bottom: 1px solid  #fff;
         -webkit-box-pack: center;
