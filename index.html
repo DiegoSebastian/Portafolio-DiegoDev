@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>DiegoDev | Inicio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -10,9 +11,9 @@
 </head>
 <body>
 	<!-- HEADER -->
-	<header> 
+	<header>
 		<div class="container-fluid">
-			<div class="row redes-main">
+			<div class="row redes-main d-none d-md-flex">
 				<div class="col-auto facebook-icon"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
 				<div class="col-auto instagram-icon"><a href="#"><i class="fab fa-youtube"></i></a></div>
 				<div class="col-auto instagram-icon"><a href="#"><i class="fab fa-instagram"></i></a></div>
@@ -42,7 +43,7 @@
 					</div>
 			</div>
 
-			<div class="row more">
+			<div class="row more d-none d-sm-inline-block">
 				<div class="col">
 					<a id="btn-more"><i class="fa fa-angle-down"></i></a>
 				</div>
@@ -54,8 +55,38 @@
 
 	<!-- MAIN -->
 	<main>
+			<section class="view-more d-bock d-md-none">
+				<div class="row d-flex">
+					<div class="col-12 angle">
+						>>>
+					</div>
+					<div class="col-12 slide">
+						<h4>Desliza el dedo para verel menú</h4>
+					</div>
+			</section>
+			<!-- NAV MOBILE -->
+			<section class="nav-mobile d-flex d-md-none">
+				<div class="row d-flex">
+					<a class="col dev" id="btn-dev">.DEV</a>
+					<div class="col">
+						<a class="btn-about-menu" id="btn-about-menu">Acerca de mi</a>
+					</div>
+					<div class="col">
+						<a class="btn-skills-menu" id="btn-skills-menu">Habilidades</a>
+					</div>
+					<div class="col">
+						<a class="btn-work-menu" id="btn-work-menu">Trabajos</a>
+					</div>
+					<div class="col">
+						<a class="btn-contact-menu" id="btn-contact-menu">Contacto</a>
+					</div>
+					<div class="col">
+					</div>
+				</div>
+			</section>
+			<!-- /NAV MOBILE -->
 			<!-- NAV -->
-			<section class="nav-main">
+			<section class="nav-main d-none d-md-block">
 				<div class="row menu">
 					<a class="col-auto dev" id="btn-dev">.DEV</a>
 					<div class="col-8 row">
@@ -96,22 +127,22 @@
 					<div class="col-auto">
 						<h2 class="title">HABILIDADES</h2>
 					</div>
-					<div class="col-md-12 web-dev">
+					<div class="col-lg-12 web-dev">
 						<h3 class="subtitle"><i class="fas fa-code"></i>Diseño y Desarrollo web</h3>
 						<div class="row skills-section">
-							<ul class="col-md-4 m-0">
+							<ul class="col-lg-4 m-0">
 								<li>- HTML5</li>
 								<li>- CSS3</li>
 								<li>- Javascript</li>
 								<li>- Jquery</li>
 							</ul>
-							<ul class="col-md-4 m-0">
+							<ul class="col-lg-4 m-0">
 								<li>- Materialize</li>
 								<li>- Wordpress</li>
 								<li>- Posicionamiento y SEO</li>
 								<li>- Control de versiones con Git y Github</li>
 							</ul>
-							<ul class="col-md-4 m-0">
+							<ul class="col-lg-4 m-0">
 								<li>- Responsive web design</li>
 								<li>- Diseño web con photoshop</li>
 								<li>- Bootstrap 4</li>
@@ -119,7 +150,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-4 IA">
+					<div class="col-lg-4 IA">
 						<h3 class="subtitle"><i class="fas fa-cogs"></i>Inteligencia artificial</h3>
 						<ul>
 							<li>- Python</li>
@@ -127,14 +158,14 @@
 							<li>- Machine Learning</li>
 						</ul>
 					</div>
-					<div class="col-md-4 idioma">
+					<div class="col-lg-4 idioma">
 						<h3 class="subtitle"><i class="fas fa-flag"></i>Idiomas</h3>
 						<ul>
 							<li>- Español (Lengua materna)</li>
 							<li>- Inglés (Intermedio)</li>
 						</ul>
 					</div>
-					<div class="col-md-4 SW">
+					<div class="col-lg-4 SW">
 						<h3 class="subtitle"><i class="fas fa-laptop"></i>Software</h3>
 						<ul>
 							<li>- Adobe Photoshop</li>
@@ -156,18 +187,19 @@
 				</div>
 				<!-- LA SALLE -->
 				<div class="row work lasalle d-flex">
+					<h3 class="subtitle-up d-lg-none">La Salle Hermano Luis</h3>
 					<div class="col-lg-6">
 						<img src="images/lasalle-browser.png" alt="Trabajo La Salle" class="img-fluid">
 					</div>
 					<div class="col-lg-6 work-text">
-						<h3 class="subtitle">La Salle Hermano Luis</h3>
+						<h3 class="subtitle d-none d-lg-block">La Salle Hermano Luis</h3>
 						<p class="work-desc">Sitio web institucional para la Unidad Educativa La Salle Hermano Luis, donde se muestra información acerca del colegio, ubicación, misión, historia, convicatorias, actos, etre otros.</p>
 						<p class="work-tech">Tecnologías: HTML5, CSS3, Javascript, Jquery, Photoshop</p>
 						<div class="row buttons-work">
-							<div class="col-md-auto">
+							<div class="col-12 col-lg-auto">
 								<a href="http://www.lasallehnoluis.tk/" target="_blank"><button class="btn-view-site">VER SITIO</button></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="col-12 col-lg-auto container-btn-more">
 								<a href="" class="btn-more-work">Ver más >></a>
 							</div>
 						</div>
@@ -177,18 +209,19 @@
 
 				<!-- COFFEE -->
 				<div class="row work coffee d-flex">
-					<div class="col-lg-6 order-md-2">
+					<h3 class="subtitle-up d-lg-none">Vikings Coffee</h3>
+					<div class="col-lg-6 order-lg-2">
 						<img src="images/coffee-browser.png" alt="Trabajo Vikings Coffee" class="img-fluid">
 					</div>
 					<div class="col-lg-6 work-text">
-						<h3 class="subtitle">Vikings Coffee</h3>
+						<h3 class="subtitle d-none d-lg-block">Vikings Coffee</h3>
 						<p class="work-desc">Sitio web para el café-restaurante Vikings Coffee (proyecto ficticio). En esta web se muestran informaciones del restaurante, descripción, menú, precios, galería, contactos y ubicación.</p>
 						<p class="work-tech">Tecnologías: HTML5, CSS3, Javascript, Jquery, Photoshop</p>
 						<div class="row buttons-work">
-							<div class="col-md-auto">
+							<div class="col-12 col-lg-auto">
 								<a href="http://vikingscoffee.cf/" target="_blank"><button class="btn-view-site">VER SITIO</button></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="col-12 col-lg-auto container-btn-more">
 								<a href="#" class="btn-more-work">Ver más >></a>
 							</div>
 						</div>
@@ -198,18 +231,19 @@
 
 				<!-- STARTUPERA -->
 				<div class="row work startup d-flex">
+					<h3 class="subtitle-up d-lg-none">Startupera</h3>
 					<div class="col-lg-6">
 						<img src="images/startupera-browser.png" alt="Trabajo startupera" class="img-fluid">
 					</div>
 					<div class="col-lg-6 work-text">
-						<h3 class="subtitle">Startupera</h3>
+						<h3 class="subtitle d-none d-lg-block">Startupera</h3>
 						<p class="work-desc">Sitio web para startupera, una estartup que se dedicada a ayudar a otras startup en temas de financiamiento, marketing, branding, presencia online, entre otros. (Proyecto ficticio). En la web se muestra la descripción de startupera, sus servicios, cientes, planes, reviews, redes y contactos.</p>
 						<p class="work-tech">Tecnologías: Bootstrap, HTML5, CSS3, Javascript, Jquery, Photoshop</p>
 						<div class="row buttons-work">
-							<div class="col-md-auto">
+							<div class="col-12 col-lg-auto">
 								<a href="http://startupera.tk/" target="_blank"><button class="btn-view-site">VER SITIO</button></a>
 							</div>
-							<div class="col-md-auto">
+							<div class="col-12 col-lg-auto container-btn-more">
 								<a href="#" class="btn-more-work">Ver más >></a>
 							</div>
 						</div>
@@ -226,31 +260,44 @@
 				</div>
 				<!-- <form action="" class="form">
 					<div class="row">
-						<div class="col-md">
+						<div class="col-lg">
 							<input type="text" class="input-text" placeholder="Nombre...">
 						</div>
-						<div class="col-md">
+						<div class="col-lg">
 							<input type="email" class="input-email" placeholder="Email...">
 						</div>
 						<div class="col-12">
 							<textarea name="" id="" placeholder="Mensaje..."></textarea>
 						</div>
-						<div class="col-md order-md-5 submit-container">
+						<div class="col-lg order-lg-5 submit-container">
 							<input type="submit" value="Enviar">
 						</div>
 					</div>
 				</form> -->
-				<div class="col-md contact-container">
-					<a href="mailto:diegosebastian.dev@gmail.com" class="my-email">Email: diegosebastian.dev@gmail.com</a>
+				<div class="col-lg contact-container">
+					<a href="mailto:diegosebastian.dev@gmail.com" class="my-email">
+						<i class="fas fa-envelope d-inline-block d-md-none"></i><span class="d-none d-md-inline-block">Email:</span> diegosebastian.dev@gmail.com
+					</a>
 				</div>
-				<div class="col-md contact-container">
-					<a href="#" class="my-face">Facebook: Diego Sebastián</a>
+				<div class="col-lg contact-container">
+					<a href="#" class="my-face">
+						<i class="fab fa-facebook-f d-inline-block d-md-none"></i><span class="d-none d-md-inline-block">Facebook:</span> Diego Sebastián
+					</a>
 				</div>
-				<div class="col-md contact-container">
-					<a href="#" class="my-insta">Instagram: @dgsebs</a>
+				<div class="col-lg contact-container">
+					<a href="#" class="my-insta">
+						<i class="fab fa-instagram d-inline-block d-md-none"></i><span class="d-none d-md-inline-block">Instagram:</span> @dgsebs
+					</a>
 				</div>
-				<div class="col-md contact-container">
-					<a href="#" class="my-yt">Canal de youtube: Diego Sebastian</a>
+				<div class="col-lg contact-container">
+					<a href="#" class="my-yt">
+						<i class="fab fa-youtube d-inline-block d-md-none"></i><span class="d-none d-md-inline-block">Canal de youtube:</span> Diego Sebastian
+					</a>
+				</div>
+				<div class="col-lg contact-container">
+					<a href="#" class="my-email">
+						<i class="fab fa-github d-inline-block d-md-none"></i><span class="d-none d-md-inline-block">Github:</span> Diego Sebastian
+					</a>
 				</div>
 			</section>
 			<!-- /CONTACTO -->

@@ -1,13 +1,17 @@
 jQuery(document).ready(function($) {
 	// Menú sticky
-	let altura = $('.nav-main').offset().top
+	$(window).resize(function(){
+		if($(window).width() > 768){
+			let altura = $('.nav-main').offset().top
 
-	$(window).on('scroll', function() {
-		if($(window).scrollTop() > altura){
-			$('.nav-main').addClass('menu-fixed')
-		}
-		else {
-			$('.nav-main').removeClass('menu-fixed')
+			$(window).on('scroll', function() {
+				if($(window).scrollTop() > altura){
+					$('.nav-main').addClass('menu-fixed')
+				}
+				else {
+					$('.nav-main').removeClass('menu-fixed')
+				}
+			})
 		}
 	})
 
