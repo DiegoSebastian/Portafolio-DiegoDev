@@ -103,6 +103,42 @@ jQuery(document).ready(function($) {
 		}, 700)
 	})
 
+	// Scrolls mobile
+	$('#btn-about-menu-mobile').on('click', function(e) {
+		e.preventDefault()
+		$('html, body').animate({
+			scrollTop: scrollAbout
+		}, 700)
+	})
+
+	$('#btn-skills-menu-mobile').on('click', function(e) {
+		e.preventDefault()
+		$('html, body').animate({
+			scrollTop: scrollSkills
+		}, 700)
+	})
+
+	$('#btn-work-menu-mobile').on('click', function(e) {
+		e.preventDefault()
+		$('html, body').animate({
+			scrollTop: scrollWorks
+		}, 700)
+	})
+
+	$('#btn-contact-menu-mobile').on('click', function(e) {
+		e.preventDefault()
+		$('html, body').animate({
+			scrollTop: scrollContact
+		}, 700)
+	})
+
+	$('#btn-dev-mobile').on('click', function(e) {
+		e.preventDefault()
+		$('html, body').animate({
+			scrollTop: scrollHome
+		}, 700)
+	})
+
 	// scroll more
 	$('#btn-more').on('click', function(e) {
 		e.preventDefault()
