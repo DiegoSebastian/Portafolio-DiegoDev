@@ -302,7 +302,8 @@ main {
       border-bottom: 1px solid #fff; }
       main .container-fluid .works .work img {
         -webkit-box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.3);
-        box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.3); }
+        box-shadow: 0px 0px 60px rgba(255, 255, 255, 0.3);
+        width: 100%; }
       main .container-fluid .works .work .work-text {
         display: -webkit-box;
         display: -ms-flexbox;
