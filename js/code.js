@@ -22,7 +22,47 @@ jQuery(document).ready(function($) {
 				}
 			})
 		}
+
+		if($(window).width() < 992){
+			// Hammer JS
+
+			menu = $('#nav-mobile')
+			body = document.body;
+			hammer = new Hammer(body)
+	
+			hammer.on('swiperight', function(ev) {
+				menu.addClass('active')
+			});
+
+			hammer.on('swipeleft', function(ev) {
+				menu.removeClass('active')
+			});
+	
+			$('#nav-mobile a').on('click', function(){
+				menu.removeClass('active')
+			})
+		}
 	})
+
+	if($(window).width() < 992){
+			// Hammer JS
+
+			let menu = $('#nav-mobile')
+			let body = document.body;
+			let hammer = new Hammer(body)
+	
+			hammer.on('swiperight', function(ev) {
+				menu.addClass('active')
+			});
+
+			hammer.on('swipeleft', function(ev) {
+				menu.removeClass('active')
+			});
+	
+			$('#nav-mobile a').on('click', function(){
+				menu.removeClass('active')
+			})
+		}
 
 
 	// Scrolls
@@ -145,23 +185,5 @@ jQuery(document).ready(function($) {
 		$('html, body').animate({
 			scrollTop: $('main').offset().top
 		}, 700)
-	})
-
-	// Hammer JS
-
-	let menu = $('#nav-mobile')
-	let body = document.body;
-	let hammer = new Hammer(body)
-
-	hammer.on('swiperight', function(ev) {
-		menu.addClass('active')
-	});
-
-	hammer.on('swipeleft', function(ev) {
-		menu.removeClass('active')
-	});
-
-	$('#nav-mobile a').on('click', function(){
-		menu.removeClass('active')
 	})
 });
