@@ -186,4 +186,38 @@ jQuery(document).ready(function($) {
 			scrollTop: $('main').offset().top
 		}, 700)
 	})
+
+
+	// ANIMACIONES
+	window.sr = ScrollReveal({ reset: true });
+	sr.reveal('.about', {
+		duration: 600,
+		origin: 'bottom',
+		distance: '100px'
+	});
+	sr.reveal('.skills', {
+		duration: 600,
+		origin: 'bottom',
+		distance: '100px'
+	});
+	sr.reveal('.work-text', {
+		duration: 600,
+		origin: 'right',
+		distance: '100px'
+	});
+	sr.reveal('.work-image', {
+		duration: 600,
+		origin: 'left',
+		distance: '100px'
+	});
+	sr.reveal('.contact-container', {
+		duration: 600,
+		origin: 'bottom',
+		distance: '100px'
+	});
+	sr.reveal('.redes-footer', {
+		duration: 600,
+		origin: 'bottom',
+		distance: '100px'
+	});
 });
