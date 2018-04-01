@@ -195,10 +195,20 @@ jQuery(document).ready(function($) {
 		origin: 'bottom',
 		distance: '100px'
 	});
+	sr.reveal('.about .title', {
+		duration: 600,
+		origin: 'top',
+		distance: '200px'
+	});
 	sr.reveal('.skills', {
 		duration: 600,
 		origin: 'bottom',
 		distance: '100px'
+	});
+	sr.reveal('.works .title', {
+		duration: 600,
+		origin: 'top',
+		distance: '200px'
 	});
 	sr.reveal('.work-text', {
 		duration: 600,
@@ -210,14 +220,39 @@ jQuery(document).ready(function($) {
 		origin: 'left',
 		distance: '100px'
 	});
-	sr.reveal('.contact-container', {
+	sr.reveal('.contact', {
 		duration: 600,
 		origin: 'bottom',
 		distance: '100px'
+	});
+	sr.reveal($('.contact .contact-container:even'), {
+		duration: 600,
+		origin: 'left',
+		distance: '200px'
+	});
+	sr.reveal($('.contact .contact-container:odd'), {
+		duration: 600,
+		origin: 'right',
+		distance: '200px'
 	});
 	sr.reveal('.redes-footer', {
 		duration: 600,
 		origin: 'bottom',
 		distance: '100px'
+	});
+	sr.reveal('.web-dev', {
+		duration: 600,
+		origin: 'top',
+		distance: '200px'
+	});
+	sr.reveal('.idioma', {
+		duration: 600,
+		origin: 'left',
+		distance: '200px'
+	});
+	sr.reveal('.SW', {
+		duration: 600,
+		origin: 'right',
+		distance: '200px'
 	});
 });
